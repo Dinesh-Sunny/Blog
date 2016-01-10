@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1> My Blog Posts </h1>
+<hr>
+
+{%for post in posts%}
+    <h2>Title: {{post.title}}</h2>
+    <p>{{post.description}}</p>
+    <h6>Date Created: {{post.created_at}}</h6>
+    <h5>Author: {{post.author_name}}</h5>
+{%endfor%}
+
+</body>
+</html>
